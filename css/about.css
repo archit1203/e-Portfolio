@@ -1,0 +1,31 @@
+/* About Section */
+#about {
+    background-color: #1f2833;
+    color: #ffffff;
+    height: 100vh;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+    padding-left: 5%;
+}
+
+#about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#about .highlight {
+    color: #00CC99; /* Highlight color */
+    font-weight: bold;
+}
+
+/* Scroll based Fade-in Animation */
+#about.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}

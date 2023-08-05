@@ -1,0 +1,61 @@
+#education {
+    background-color: #1f2833;
+    color: #ffffff;
+    height: 100vh;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+    padding-left: 5%;
+}
+
+
+#education h2{
+    font-size: 30px;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education-list li {
+    margin-bottom: 15px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.education-list li:hover {
+    transform: scale(1.05);
+}
+
+.education-list h3 {
+    font-family: "Fira Code", monospace;
+    font-size: 18px;
+    margin-bottom: 2px;
+    color: #00CC99; /* Change heading color to #00CC99 (light green) */
+    transition: color 0.2s ease;
+}
+
+.education-list p {
+    font-size: 14px;
+    margin-bottom: 1px;
+    transition: color 0.2s ease;
+}
+
+.education-list p:last-child {
+    margin-bottom: 0;
+}
+
+/* Hover effects on text */
+.education-list li::before {
+    content: ""; /* Remove emoji content */
+}
+
+.education-list li:hover h3 {
+    color: #F8F8F8; /* Lighter shade of white on hover */
+}
+
+.education-list li:hover p {
+    color: #F8F8F8; /* Lighter shade of white on hover */
+    text-decoration: none; /* Remove underline on hover */
+}

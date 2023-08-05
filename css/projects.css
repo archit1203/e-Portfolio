@@ -1,0 +1,53 @@
+/* Add this CSS to your existing home.css or create a new CSS file */
+
+/* Projects Section */
+#projects {
+    background-color: #0b0c10;
+    height: 100vh;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+    padding-left: 5%;
+  }
+  
+  /* Projects Grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns in one row */
+    grid-gap: 20px;
+  }
+  
+  /* Project Styling */
+  .project {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+  }
+  
+  .project h3 {
+    font-size: 18px;
+    color: #00CC99; /* Change heading color to #00CC99 (light green) */
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+  }
+  
+  /* Hover effects on project */
+  .project:hover h3 {
+    color: #F8F8F8; /* Lighter shade of white on hover */
+  }
+  
+  .project p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+  }
+  
+  .project:hover p {
+    color: #F8F8F8; /* Lighter shade of white on hover */
+  }
+  

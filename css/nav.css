@@ -1,0 +1,92 @@
+/* Navigation */
+nav {
+    position: fixed;
+    margin-left: 1%;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    /* background-color: rgba(11, 12, 16, 0.7); */
+    z-index: 1000;
+    width: 45px; /* Increase the width as desired */
+    border-radius: 25px; /* Make the border circular */
+}
+
+
+nav ul.vertical-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.vertical-nav li {
+    margin: 15px 0;
+}
+
+nav ul.vertical-nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul.vertical-nav li a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+
+/* Tooltip */
+nav ul.vertical-nav li a::before {
+    content: attr(data-alt);
+    position: absolute;
+    top: -35px; /* Adjust the position of the tooltip above the cursor */
+    left: 150%;
+    transform: translateX(-50%);
+    background-color: rgba(11, 12, 16, 0.7);
+    color: #ffffff;
+    padding: 5px 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    white-space: nowrap;
+}
+
+nav ul.vertical-nav li a:hover::before {
+    opacity: 1;
+}
+
+/* Circle and Icon Enlarge Effect */
+nav ul.vertical-nav li a {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul.vertical-nav li a::before {
+    /* ... Existing styles ... */
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: scale(0.8); /* Start with a smaller size */
+}
+
+nav ul.vertical-nav li a:hover::before {
+    opacity: 1;
+    transform: scale(1); /* Scale up to 100% on hover */
+}
+
+nav ul.vertical-nav li a img {
+    /* Existing styles for the icons ... */
+    transition: transform 0.2s ease; /* Add transition for the icon */
+}
+
+nav ul.vertical-nav li a:hover img {
+    transform: scale(2); /* Scale up the icon on hover */
+}

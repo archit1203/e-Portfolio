@@ -1,0 +1,168 @@
+/* Common */
+body, h1, h2, p, a, .project {
+    transition: opacity 0.3s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b0c10;
+    overflow-x: hidden;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 1;
+}
+
+/* Scroll based Fade-in Animation */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.fade-in-section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#div-about, #div-work, #div-respo, #div-edu, #div-proj{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 5%;
+}
+
+.name {
+    color: #E6F3FF;
+    font-weight: bolder;
+}
+
+.field {
+    color: #E6F3FF;
+    font-weight: bold;
+}
+
+.centered-content h1{
+    color: #E6F3FF;
+    font-weight: bold;
+}
+
+
+/* Full Screen Sections */
+.full-screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Particle Animation Container */
+#particles-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Home Secion */
+#home {
+    background-color: #0b0c10;
+    color: #00CC99;
+    height: 100vh;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-left: 10%;
+}
+
+.download-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #00CC99;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.download-button:hover {
+    background-color: #009c7b;
+}
+
+/* Work Experience Section */
+#work-experience {
+    background-color: #0b0c10;
+    height: 100vh;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+    padding-left: 5%;
+}
+
+/* Position of Responsibility Section */
+#position-of-responsibility {
+    background-color: #1f2833;
+    color: #ffffff;
+    height: 100vh;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+    padding-left: 5%;
+}
+
+/* Heading Styles */
+h1 {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Contact Info List */
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+
+/* Footer */
+footer a {
+    color: #00CC99;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #009c7b;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0b0c10;
+    color: #ffffff;
+}
